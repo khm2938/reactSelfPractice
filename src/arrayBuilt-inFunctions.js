@@ -41,4 +41,8 @@ console.log(text);
 //모든 숫자를 콘솔에 출력해라.
 //numbers.forEach((num)=>console.log(num));
 //console.log(...numbers);
-//numbers.map((num)=>console.log(num));
+//numbers.map((num)=>console.log(num)); //map은 출력용으로 사용 x -> console은 찍히지만 반환값은 [undefined, undefined, ...] -> map은 새 배열을 만들때 사용
+const numbers1 = numbers.map((num)=>num);
+for (let i = 0; i < numbers1.length; i++) {
+  console.log(numbers1[i])
+}
